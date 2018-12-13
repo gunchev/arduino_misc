@@ -32,7 +32,7 @@ void setup() {
     Serial.begin(115200); // Open serial monitor at 115200 baud to see ping results.
 }
 
-// Pure C++, 62 bytes code, 50-52 clock cycles (each octed > 9 (0xA - 0xF) adds one cycle).
+// Pure C++, 62 bytes code, 50-52 clock cycles (each octet > 9 (0xA - 0xF) adds one cycle).
 void printHex62(const uint8_t n) {
     unsigned char c = n >> 4;
     c += '0';
